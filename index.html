@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+  <!-- Подключаемые файлы, метатеги, название страницы -->
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Oswald|Roboto|Roboto+Mono&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:700&display=swap" rel="stylesheet">
+  <!-- Кодировка страницы-->
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Название страницы</title>
+  
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/1a3ec70e2e.js"></script>
+</head>
+<body class="body">
+  <div class="tel-meny">
+
+    <ul id="menu" class="ul">
+   <li> <a href="#sal0">Главная</a></li>
+    <li><a href="#sal1">Страны</a></li>
+   <li> <a href="#sal2">Фото</a></li>
+    <li><a href="#sal3">Отзовы</a></li>
+  </ul>
+  </div>
+
+  <header id="sal0" class="header">
+<div class="img1"><img src="img/1.png" alt=""></div>
+<div class="img2"><img src="img/2.png" alt=""></div>
+<div class="img3"><img src="img/3.png" alt=""></div>
+<div class="fon1">
+<button class="burger-meny"><img width="50%" src="img/bur.png"></button>
+<button class="bur-meny"><img width="50%" src="img/bur.png"></button>
+  <div  class="logo">
+<img class="ic" src="img/ic.png">
+<h2 class="h2"><a>TRAVEL</a> NOW</h2>
+<p class="p">Туристическое Агенство</p>
+  </div >
+<div id="menu" class="meny">
+
+    <a href="#sal0">Главная</a>
+    <a href="#sal1">Страны</a>
+    <a href="#sal2">Фото</a>
+    <a href="#sal3">Отзовы</a>
+
+</div>
+
+
+  </header>
+  <div class="contactbloc">
+  <div class="text1">
+  <h2>Нетронутая тишина <br> альпийских гор Швейцарии</h2>
+  <p>Пешие прогулки, велеколепные <br> живописные озёра и величественные <br> горы </p>
+</div>
+
+</div>
+    <div class="contactform">
+  <h2>подобрать тур</h2>
+  <p>По лучшей цене</p>
+  
+  <input type="text" placeholder="Количество людей">
+   <input type="text" placeholder="Страна для отдыха">
+   <input type="text" placeholder="Количество ночей">
+   <input type="text" placeholder="Контактный телефон">
+<button>Отправить</button>
+  
+</div>
+  <nav id="sal1">
+
+  <div class="bloc1">
+    <div  class="text6">
+      <h2>Выберите страну для отдыха</h2>
+      <p>Выбирите страну для отдыха и получите лучшие предложение по оптимальным ценам для</p> <p class="p2"> яркого и запоминающегося приключения</p>
+<div class="slider">
+<img src="img/c1.png"  alt="">
+<img src="img/c2.png"  alt="">
+<img src="img/c3.png"  alt="">
+<img src="img/c4.png"  alt="">
+</div>
+    </div>
+  </div>
+  <div class="bloc2">
+    <div class="text7">
+      <h2 id="sal2"  >Фото</h2>
+      <p>Перед вами фотографии, которые сделали наши клиенты на отдыхе и представьте, что вы</p>
+      <p>смотрите на них через объектив собственной фотокамеры</p>
+    </div>
+      <div  class="f">
+      <img src="img/f1.png" alt="">
+      <img src="img/f2.png" alt="">
+      <img src="img/f3.png" alt="">
+      <img src="img/f4.png" alt="">
+      <img src="img/f5.png" alt="">
+      <img src="img/f6.png" alt="">
+    </div>
+    <div id="sal3" class="text8">
+      <h2>Отзовы наших клиентов</h2>
+    </div>
+    <img class="otz" src="img/otz.jpg" alt="">
+   
+  </div>
+  </nav>
+  <footer>
+  <div class="fottertext">
+    <img class="imgf" src="img/ic.png" alt="">
+    <h2 class="h1f">TRAVEL</h2> 
+    <h2 class="h2f">Now</h2>
+    <p class="p1f">ТУРИСТИЧЕСКОЕ АГЕНСТВО</p>
+   
+ </div>
+ <div class="clic">
+ <img class="clic1" src="img/fotclic1.png" alt="">
+ <img class="clic2" src="img/fotclic2.png" alt="">
+ <img class="clic3" src="img/fotclic3.png" alt="">
+</div>
+
+  </footer>
+
+  <script type="text/javascript">
+    var body = document.querySelector(".body");
+    var img1 =  document.querySelector(".img1");
+    var img2 =  document.querySelector(".img2");
+    var img3 =  document.querySelector(".img3");
+
+    body.onmousemove = function(e){
+   
+
+      img1.style.marginLeft = e.clientX/-50  + 'px';
+      img2.style.marginLeft = e.clientX/35  + 'px';
+      img3.style.marginLeft = e.clientX/25  + 'px';
+
+  }
+  var burclic = document.querySelector(".burger-meny");
+  var burMeny = document.querySelector(".tel-meny");
+  var bur = document.querySelector(".bur-meny");
+  bur.style.display = 'none';
+   burclic.onclick = function a(){
+    burMeny.style.marginLeft = 0 + '%';
+    burclic.style.display = 'none';
+    bur.style.display = 'block';
+  }
+   bur.onclick = function a(){
+    burMeny.style.marginLeft = -300 + '%';
+    burclic.style.display = 'block';
+    bur.style.display = 'none';
+  }
+
+  
+
+ $(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1000);
+    });
+});
+
+  </script>
+</body>
+</html>
